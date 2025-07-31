@@ -1,0 +1,83 @@
+// .save-button {
+//   position: fixed;
+//   width: 150px;
+//   bottom: 20px;
+//   right: 20px;
+//   padding: 10px 20px;
+//   background-color: rgb(40, 217, 121);
+//   color: white;
+//   border: none;
+//   border-radius: 5px;
+//   cursor: pointer;
+//   font-size: 14px;
+//   font-weight: 500;
+//   z-index: 1000;
+//   margin-bottom: 10px;
+// }
+
+// .save-button:hover {
+//   background-color: rgb(35, 190, 105);
+// }
+
+// .pdf-button {
+//   position: fixed;
+//   width: 150px;
+//   right: 20px;
+//   bottom: 80px;
+//   padding: 10px 20px;
+//   border: none;
+//   border-radius: 5px;
+//   cursor: pointer;
+//   font-size: 14px;
+//   font-weight: 500;
+//   z-index: 1000;
+//   background-color: #4285f4;
+// }
+
+// .pdf-button:hover {
+//   background-color: #3367d6;
+// }
+
+.save-button,
+.pdf-button,
+.clear-button {
+  position: fixed;
+  right: 20px;
+  padding: 10px 20px;
+  width: 150px;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  z-index: 1000;
+  text-align: center;
+}
+
+.save-button {
+  bottom: 20px;
+  background-color: rgb(40, 217, 121);
+}
+
+.save-button:hover {
+  background-color: rgb(35, 190, 105);
+}
+
+.pdf-button {
+  bottom: 80px;
+  background-color: #4285f4;
+}
+
+.pdf-button:hover {
+  background-color: #3367d6;
+}
+
+.clear-button {
+  bottom: 140px;
+  background-color: #ff4444;
+}
+
+.clear-button:hover {
+  background-color: #cc0000;
+}

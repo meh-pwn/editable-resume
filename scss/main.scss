@@ -1,0 +1,56 @@
+@use 'sass:meta';
+@use 'theme.scss';
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+@include meta.load-css('profile.scss');
+@include meta.load-css('languages.scss');
+@include meta.load-css('experience.scss');
+@include meta.load-css('tools.scss');
+@include meta.load-css('education.scss');
+@include meta.load-css('interests.scss');
+@include meta.load-css('contact.scss');
+@include meta.load-css('buttons.scss');
+@include meta.load-css('animations.scss');
+@include meta.load-css('adaptive.scss');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: theme.$bg-body;
+}
+
+.container {
+  width: 595px; /* Фиксированная ширина A4 в пикселях */
+  align-content: flex-start;
+  box-sizing: border-box;
+  min-height: 842px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 15px 20px;
+  background-color: theme.$bg-container;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+  .extra-box {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 267px;
+  }
+}
+
+.container > * {
+  page-break-inside: avoid;
+}

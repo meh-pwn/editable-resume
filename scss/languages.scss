@@ -1,0 +1,60 @@
+@use 'theme';
+
+.languages {
+  width: 267px;
+  height: 124px;
+  background-color: theme.$primary-bg-boxes;
+  border-radius: 12px;
+  padding: 12px;
+  box-sizing: border-box;
+
+  .languages-header {
+    width: auto;
+    height: 21px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.5;
+    text-align: left;
+    color: theme.$primary-text;
+    margin-bottom: 16px;
+  }
+
+  .languages-list {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 10px;
+    list-style: none;
+    margin-right: 17px;
+
+    .language-item {
+      height: 10px;
+      display: flex;
+      align-items: center;
+      width: 100%;
+
+      .language-name {
+        font-size: 10px;
+        font-weight: 500;
+        width: 58px;
+      }
+
+      .progress-container {
+        flex-grow: 1;
+        height: 11px;
+        gap: 10px;
+        border-radius: 3px;
+        margin-left: 17px;
+
+        .progress-fill {
+          width: 100%;
+          height: 100%;
+          background-color: theme.$green;
+          border-radius: 3px;
+        }
+      }
+    }
+  }
+}

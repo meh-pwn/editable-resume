@@ -1,0 +1,65 @@
+@use 'theme';
+
+.profile {
+  height: 124px;
+  display: flex;
+  gap: 20px;
+
+  .profile-image {
+    width: 124px;
+    height: 124px;
+    border-radius: 12px;
+    overflow: hidden;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  .name-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 124px;
+    height: 124px;
+    padding: 12px;
+    border-radius: 12px;
+    background-color: theme.$primary-bg-boxes;
+
+    .greeting-phrase {
+      font-weight: 500;
+      font-size: 10px;
+      line-height: 1.5;
+      text-align: left;
+      color: theme.$primary-text;
+    }
+
+    .your-info {
+      width: 100%;
+
+      h1 {
+        height: 15px;
+        align-self: stretch;
+        margin-bottom: 6px;
+        font-weight: 600;
+        font-size: 14px;
+        text-align: left;
+        line-height: 1.04;
+        color: theme.$primary-text;
+      }
+
+      p {
+        height: 18px;
+        align-self: stretch;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 1.5;
+        text-align: left;
+        color: theme.$profession-text;
+      }
+    }
+  }
+}

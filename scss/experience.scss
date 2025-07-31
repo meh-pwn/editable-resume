@@ -1,0 +1,231 @@
+@use 'theme';
+
+.experience {
+  width: 411px;
+  height: 359px;
+  background-color: theme.$primary-bg-boxes;
+  border-radius: 12px;
+  padding: 12px;
+  box-sizing: border-box;
+
+  .experience-header {
+    width: 77px;
+    height: 21px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.5;
+    text-align: center;
+    color: theme.$primary-text;
+    margin-bottom: 16px;
+  }
+
+  .job-list {
+    width: 387px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .last-job {
+    margin-top: 0;
+    width: 387px;
+    height: 76px;
+    gap: 8px;
+    padding: 8px;
+    align-self: stretch;
+    margin: 0;
+    background-color: theme.$green;
+    border-radius: 10px;
+    color: theme.$light-text;
+
+    .top-bar {
+      width: 371px;
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 8px;
+
+      .date {
+        width: auto;
+        height: 12px;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 10px;
+
+        color: theme.$light-text;
+        font-size: 8px;
+        font-weight: 500;
+        line-height: 1.5;
+        text-align: left;
+      }
+
+      .tag-container {
+        width: 61px;
+        height: 16px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        border-radius: 59px;
+        background-color: theme.$bg-tag;
+
+        .tag {
+          font-size: 8px;
+          font-weight: 500;
+          line-height: 1.5;
+          padding: 0 2px;
+          color: theme.$tag-text;
+          white-space: nowrap;
+          text-align: center;
+          width: 100%;
+          box-sizing: border-box;
+        }
+      }
+    }
+
+    .main-content {
+      display: flex;
+
+      .text-content {
+        width: 124px;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .job-info {
+        width: 124px;
+        display: flex;
+        align-items: flex-start;
+
+        .rolename {
+          font-size: 10px;
+          font-weight: 500;
+          line-height: 1.5;
+          text-align: center;
+        }
+      }
+
+      .about-job {
+        .info {
+          font-size: 8px;
+          font-weight: 400;
+          line-height: 1.5;
+          letter-spacing: 0%;
+          color: theme.$secondary-light-text;
+        }
+      }
+    }
+
+    .featured-points {
+      margin-left: 16px;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+      color: theme.$secondary-light-text;
+
+      .points {
+        font-size: 8px;
+        font-weight: 400;
+        line-height: 1.5;
+        text-align: left;
+      }
+    }
+  }
+
+  .second-job {
+    height: 108px;
+  }
+
+  .third-job {
+    height: 96px;
+  }
+
+  .second-job,
+  .third-job {
+    width: 387px;
+    gap: 8px;
+    padding: 8px;
+    align-self: stretch;
+    background-color: theme.$bg-container;
+    border-radius: 10px;
+    color: theme.$primary-text;
+
+    .top-bar {
+      width: 371px;
+      height: 12px;
+      display: flex;
+      justify-content: flex-start;
+      margin-bottom: 8px;
+
+      .date {
+        width: auto;
+        height: 12px;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 8px;
+
+        font-size: 8px;
+        font-weight: 500;
+        line-height: 1.5;
+        text-align: left;
+      }
+    }
+
+    .main-content {
+      display: flex;
+      width: 371px;
+      height: 72px;
+
+      .text-content {
+        width: 124px;
+        height: 25px;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .job-info {
+        width: 124px;
+        display: flex;
+        align-items: flex-start;
+
+        .rolename {
+          font-size: 10px;
+          font-weight: 500;
+          line-height: 1.5;
+          text-align: center;
+        }
+      }
+
+      .about-job {
+        .info {
+          font-size: 8px;
+          font-weight: 400;
+          line-height: 1.5;
+          letter-spacing: 0%;
+          color: theme.$secondary-text;
+        }
+      }
+    }
+
+    .featured-points {
+      margin-left: 16px;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+
+      .points {
+        font-size: 8px;
+        font-weight: 400;
+        line-height: 1.5;
+        text-align: left;
+      }
+    }
+  }
+}

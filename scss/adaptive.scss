@@ -1,0 +1,153 @@
+@media (max-width: 768px) {
+  .container {
+    width: 100%;
+    padding: 15px;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .profile {
+    flex-direction: column;
+    height: auto;
+    gap: 15px;
+  }
+
+  .profile .name-box {
+    width: 100%;
+    height: auto;
+    padding: 15px;
+  }
+
+  .profile .your-info h1 {
+    font-size: 24px;
+  }
+
+  .profile .your-info p {
+    font-size: 16px;
+  }
+
+  .languages,
+  .experience,
+  .tools,
+  .education,
+  .interests,
+  .contact {
+    width: 100%;
+    height: auto;
+  }
+
+  .experience .job-list,
+  .experience .last-job,
+  .experience .second-job,
+  .experience .third-job {
+    width: 100%;
+  }
+
+  .experience .last-job .top-bar,
+  .experience .second-job .top-bar,
+  .experience .third-job .top-bar {
+    width: 100%;
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .education .main-content {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+
+  .education .first-column,
+  .education .second-column {
+    width: 100%;
+  }
+
+  .education .last-education,
+  .education .second-education,
+  .education .third-education {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+
+  .extra-box {
+    width: 100%;
+  }
+
+  .save-button,
+  .pdf-button,
+  .clear-button {
+    width: 120px;
+    font-size: 12px;
+    padding: 8px 12px;
+  }
+
+  .save-button {
+    bottom: 20px;
+    right: 20px;
+  }
+
+  .pdf-button {
+    bottom: 70px;
+    right: 20px;
+  }
+
+  .clear-button {
+    bottom: 120px;
+    right: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .profile .profile-image {
+    width: 100px;
+    height: 100px;
+    align-self: center;
+  }
+
+  .experience .main-content {
+    flex-direction: column;
+  }
+
+  .experience .featured-points {
+    margin-left: 0;
+    margin-top: 10px;
+  }
+
+  .tools .frame {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .tools .first-frame,
+  .tools .second-frame,
+  .tools .third-frame {
+    width: 100px;
+    height: 100px;
+  }
+
+  .tools .tools-grid {
+    padding: 12px 6px;
+  }
+
+  .tools .tool {
+    width: 16px;
+    height: 16px;
+  }
+
+  body {
+    font-size: 14px;
+  }
+
+  h1 {
+    font-size: 20px;
+  }
+
+  .save-button,
+  .pdf-button,
+  .clear-button {
+    width: 100px;
+    font-size: 11px;
+    padding: 6px 10px;
+  }
+}

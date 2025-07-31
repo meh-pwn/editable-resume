@@ -1,0 +1,42 @@
+@use 'theme';
+
+.interests {
+  width: 267px;
+  height: 177px;
+  background-color: theme.$primary-bg-boxes;
+  border-radius: 12px;
+  padding: 12px;
+  box-sizing: border-box;
+
+  .interests-header {
+    width: auto;
+    height: 21px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.5;
+    text-align: left;
+    margin-bottom: 16px;
+  }
+
+  .tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+
+    .tag {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: center;
+      padding: 4px 10px 4px 10px;
+      width: auto;
+      height: 23px;
+      font-size: 10px;
+      font-weight: 400;
+      line-height: 1.5;
+      text-align: center;
+      border-radius: 40px;
+      background-color: theme.$bg-container;
+    }
+  }
+}

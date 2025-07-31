@@ -1,0 +1,26 @@
+@use 'theme';
+
+.contact {
+  width: 267px;
+  height: 92px;
+  background-color: theme.$bg-black;
+  border-radius: 12px;
+  padding: 12px;
+  box-sizing: border-box;
+  color: theme.$light-text;
+
+  .contact-info {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.5;
+    text-align: left;
+    margin-bottom: 11px;
+  }
+
+  .contact-email {
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 1.5;
+    text-align: left;
+  }
+}
